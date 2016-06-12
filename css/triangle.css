@@ -10,13 +10,13 @@
 	height: 300px;
 	float: left;
 	height: auto;
-	font-size: x-small;
 }
 
 #triangle_frame {
 	position: relative;
 	float: left;
 	border: 3px solid #224466;
+	font-size: x-small;
 }
 
 #triangle_history {
@@ -46,12 +46,12 @@
 
 #side2_container {
 	left: 10px; 
-	top: 40px;
+	top: 20px;
 }
 
 #side3_container {
 	right: 10px; 
-	top: 40px;
+	top: 20px;
 }
 
 #triangle_type {
@@ -85,7 +85,3 @@
 .wide {
 	width: 85px;
 }
-
-
-
-
