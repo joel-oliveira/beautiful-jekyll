@@ -33,7 +33,8 @@ Inspired on the work done by [Elisabeth Hendrickson](http://testobsessed.com/200
 					Side 1<br />
 					<input id="triangle_side1" name="triangle[side1]" onchange="drawTriangle();" size="5" type="text" />
 				</div>
-				<div id="triangle_type"></div>
+				<div id="triangle_type">
+				</div>
 				<div id="canvas">&nbsp;</div>
 			</div>
 		</form>

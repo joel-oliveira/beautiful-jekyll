@@ -40,23 +40,19 @@ Triangle.prototype.getApex = function() {
 }
 
 Triangle.prototype.getTriangleType = function() {
+    var triangleType = "Isosceles";
 	if (this.sorted_sides[2] > this.sorted_sides[0] + this.sorted_sides[1]) {
-		return "Invalid";
+		triangleType = "Invalid";
+	} else if (this.sorted_sides[2] == this.sorted_sides[0] + this.sorted_sides[1]) {
+		triangleType =  "Degenerate";
+	} else if ((this.sorted_sides[0] == this.sorted_sides[1]) && (this.sorted_sides[1] == this.sorted_sides[2])) {
+		triangleType =  "Equilateral";
+	} else if (Math.pow(this.sorted_sides[2], 2) == (Math.pow(this.sorted_sides[0], 2) + (Math.pow(this.sorted_sides[1], 2)))) {
+		triangleType =  "Right";
+	} else if ((this.sorted_sides[2] != this.sorted_sides[1]) && (this.sorted_sides[1] != this.sorted_sides[0])) {
+		triangleType =  "Scalene";
 	}
-	if (this.sorted_sides[2] == this.sorted_sides[0] + this.sorted_sides[1]) {
-		return "Degenerate";
-	}
-	if ((this.sorted_sides[0] == this.sorted_sides[1]) && (this.sorted_sides[1] == this.sorted_sides[2])) {
-		return "Equilateral";
-	}
-	if (Math.pow(this.sorted_sides[2], 2) == (Math.pow(this.sorted_sides[0], 2) + (Math.pow(this.sorted_sides[1], 2)))) {
-		return "Right";
-	}
-	if ((this.sorted_sides[2] != this.sorted_sides[1]) && (this.sorted_sides[1] != this.sorted_sides[0])) {
-		return "Scalene";
-	} else {
-		return "Isosceles";
-	}
+	return triangleType;
 }
 
 Triangle.prototype.draw = function() {
@@ -73,7 +69,7 @@ Triangle.prototype.draw = function() {
 	} else {
 		document.getElementById('triangle_coordinates').value = "";
 	}
-	document.getElementById('triangle_type').innerHTML = this.triangleType;
+	document.getElementById('triangle_type').innerHTML = "\n" + this.triangleType + "\n";
 	document.getElementById('triangle_category').value = this.triangleType;
 }
 
