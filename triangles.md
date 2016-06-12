@@ -22,15 +22,15 @@ Inspired on the work done by [Elisabeth Hendrickson](http://testobsessed.com/200
 			<input id="triangle_coordinates" name="triangle[coordinates]" type="hidden" />
 			<div id="triangle_frame">
 				<div id="side2_container" class="side">
-					<font size=1>Side 2</font><br />
+					Side 2<br />
 					<input id="triangle_side2" name="triangle[side2]" onchange="drawTriangle();" size="5" type="text" />
 				</div>
 				<div id="side3_container" class="side">
-					<font size=1>Side 3</font><br />
+					Side 3<br />
 					<input id="triangle_side3" name="triangle[side3]" onchange="drawTriangle();" size="5" type="text" />
 				</div>
 				<div id="side1_container" class="side">
-					<font size=1>Side 1</font><br />
+					Side 1<br />
 					<input id="triangle_side1" name="triangle[side1]" onchange="drawTriangle();" size="5" type="text" />
 				</div>
 				<div id="triangle_type"></div>
