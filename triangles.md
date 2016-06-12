@@ -11,13 +11,12 @@ Inspired on the work done by [Elisabeth Hendrickson](http://testobsessed.com/200
 
 <div id="triangle">
 	<div id="triangle_form">
-		<form action="/triangles" method="post" onsubmit="new Ajax.Updater('triangles_list', '/triangles', {asynchronous:true, evalScripts:true, parameters:Form.serialize(this)}); return false;"><div style="margin:0;padding:0;display:inline"><input name="authenticity_token" type="hidden" value="d8dl/gsNyQ+NjO4CGuG9xfo1TDEV+bqjhYG2JJjXoCc=" /></div>
+		<form action="/triangles" method="post" onsubmit="return false;">
 			<p>
 				<i>Please enter sizes for the sides of the triangle:</i>
 			</p>
 			<input id="triangle_category" name="triangle[category]" type="hidden" />
 			<input id="triangle_coordinates" name="triangle[coordinates]" type="hidden" />
-			<input id="triangle_session_id" name="triangle[session_id]" type="hidden" value="26675120" />
 			<div id="triangle_frame">
 				<div id="canvas">&nbsp;</div>
 				<div id="side2_container" class="side">
@@ -48,7 +47,6 @@ Inspired on the work done by [Elisabeth Hendrickson](http://testobsessed.com/200
 		</div></b>
 		<br class="clearfloat" />
 		<div id="triangles_list">
-		
 		</div>
 	</div>
 </div>

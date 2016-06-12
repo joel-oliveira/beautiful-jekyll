@@ -97,7 +97,7 @@ function drawTriangle() {
 	var side3val = document.getElementById('triangle_side3').value;
 	triangle.setSides(side1val, side2val, side3val);
 	triangle.draw();
-	new Ajax.Updater('triangles_list', '/triangles', {asynchronous:true, evalScripts:true, parameters:Form.serialize(document.getElementById('triangle_side1').form)});
+	//new Ajax.Updater('triangles_list', '/triangles', {asynchronous:true, evalScripts:true, parameters:Form.serialize(document.getElementById('triangle_side1').form)});
 }
 
 function initializeTriangle() {
