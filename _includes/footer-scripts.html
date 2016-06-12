@@ -3,25 +3,20 @@
 	<script src="{{ js }}"></script>
   {% endfor %}
 {% endif %}
-
 {% if page.ext-js %}
   {% for js in page.ext-js %}
 	<script src="{{ js }}"></script>
   {% endfor %}
 {% endif %}
-
 {% if page.js %}
-	YES
   {% for js in page.js %}
 	<script src="{{ js | prepend: site.baseurl | replace: '//', '/' }}"></script>
   {% endfor %}
   {% else %}
-	NOP
 {% endif %}
-
 {% if layout.common-js %}
-  {% for js in layout.common-js %}
     <!-- doing something a bit funky here because I want to be careful not to include JQuery twice! -->
+  {% for js in layout.common-js %}
     {% if js contains 'jquery' %}
       <script>
       	if (typeof jQuery == 'undefined') {
@@ -33,5 +28,4 @@
     {% endif %}
   {% endfor %}
 {% endif %}
-
 {% include google_analytics.html %}
