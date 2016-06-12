@@ -97,7 +97,18 @@ function drawTriangle() {
 	var side3val = document.getElementById('triangle_side3').value;
 	triangle.setSides(side1val, side2val, side3val);
 	triangle.draw();
+	$('triangles_list').update("New text");
+	$('triangles_list').update('<div class="triangle_row clearfloat"><div class="triangle_data_cell narrow">3</div><div class="triangle_data_cell narrow">2</div><div class="triangle_data_cell narrow">3</div><div class="triangle_data_cell wide">Isosceles</div><div class="triangle_data_cell wide">(10,190) (51,70) (200,190)</div></div>');
 	//new Ajax.Updater('triangles_list', '/triangles', {asynchronous:true, evalScripts:true, parameters:Form.serialize(document.getElementById('triangle_side1').form)});
+	/*
+	<div class="triangle_row clearfloat">
+		<div class="triangle_data_cell narrow">3</div>
+		<div class="triangle_data_cell narrow">2</div>
+		<div class="triangle_data_cell narrow">3</div>
+		<div class="triangle_data_cell wide">Isosceles</div>
+		<div class="triangle_data_cell wide">(10,190) (51,70) (200,190)</div>
+	</div>
+	*/
 }
 
 function initializeTriangle() {
