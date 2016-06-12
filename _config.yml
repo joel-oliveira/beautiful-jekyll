@@ -26,9 +26,9 @@ navbar-links:
   About Me: "aboutme"
   Events: "events"
   Training:
-    - TeSTO - Techniques for Software Testing Optimization: "testo"
+    - TeSTO: "testo"
   Resources:
-    - Testing Triangles: "triangles"
+    - Triangles: "triangles"
 #  Resources:
 #    - Beautiful Jekyll: "http://deanattali.com/beautiful-jekyll/"
 #    - Learn markdown: "http://www.markdowntutorial.com/"
@@ -47,7 +47,7 @@ avatar: "https://media.licdn.com/mpr/mpr/shrink_100_100/p/6/000/247/0c9/1b50047.
 author:
   name: Joel Oliveira
   email: "oliveira.joel@outlook.com"
-  facebook: yourname  # eg. daattali
+  #facebook: yourname  # eg. daattali
   #github: yourname    # eg. daattali
   #twitter: yourname   # eg. daattali
   linkedin: "in/joeloliveira"  # eg. "pub/dean-attali/8/946/143"
