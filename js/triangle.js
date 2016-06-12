@@ -61,7 +61,8 @@ Triangle.prototype.getTriangleType = function() {
 
 Triangle.prototype.draw = function() {
 	this.canvas.clear();
-	if (this.getTriangleType() != "Invalid") {
+	this.triangleType = this.getTriangleType();
+	if (this.triangleType != "Invalid") {
 		this.apexPoint = this.getApex();
 	    this.x2 = parseInt(this.apexPoint[0]);
 	    this.y2 = parseInt(this.apexPoint[1]);
@@ -72,8 +73,8 @@ Triangle.prototype.draw = function() {
 	} else {
 		document.getElementById('triangle_coordinates').value = "";
 	}
-	document.getElementById('triangle_type').innerHTML = this.getTriangleType();
-	document.getElementById('triangle_category').value = this.getTriangleType();
+	document.getElementById('triangle_type').innerHTML = this.triangleType;
+	document.getElementById('triangle_category').value = this.triangleType;
 }
 
 Triangle.prototype.center = function() {
@@ -97,7 +98,7 @@ function drawTriangle() {
 	var side3val = document.getElementById('triangle_side3').value;
 	triangle.setSides(side1val, side2val, side3val);
 	triangle.draw();
-	document.getElementById('triangles_list').innerHTML = '<div class="triangle_row clearfloat"><div class="triangle_data_cell narrow">' + triangle.x1 + '</div><div class="triangle_data_cell narrow">' + triangle.x2 + '</div><div class="triangle_data_cell narrow">' + triangle.x3 + '</div><div class="triangle_data_cell wide">-</div><div class="triangle_data_cell wide">(10,190) (51,70) (200,190)</div></div>' + document.getElementById('triangles_list').innerHTML;
+	document.getElementById('triangles_list').innerHTML = '<div class="triangle_row clearfloat"><div class="triangle_data_cell narrow">' + triangle.s1 + '</div><div class="triangle_data_cell narrow">' + triangle.s2 + '</div><div class="triangle_data_cell narrow">' + triangle.s3 + '</div><div class="triangle_data_cell wide">' + triangle.triangleType + '</div><div class="triangle_data_cell wide">(10,190) (51,70) (200,190)</div></div>' + document.getElementById('triangles_list').innerHTML;
 }
 
 function initializeTriangle() {
