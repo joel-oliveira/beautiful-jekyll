@@ -2,7 +2,7 @@
 layout: page
 title: Testing Triangles
 subtitle: A classic testing exercise
-common-js:
+page-js:
   - "https://raw.githubusercontent.com/DmitryBaranovskiy/raphael/master/raphael.min.js"
   - "/js/raphael-2.2.0.min.js"
 ---
