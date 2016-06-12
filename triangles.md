@@ -2,6 +2,9 @@
 layout: page
 title: Testing Triangles
 subtitle: A classic testing exercise
+common-js:
+  - "https://raw.githubusercontent.com/DmitryBaranovskiy/raphael/master/raphael.min.js"
+  - "/js/raphael-2.2.0.min.js"
 ---
 
 Inspired on the work done by [Elisabeth Hendrickson](http://testobsessed.com/2007/03/testing-triangles-a-classic-exercise-updated-for-the-web/) available [here](http://practice.agilistry.com/triangle).
