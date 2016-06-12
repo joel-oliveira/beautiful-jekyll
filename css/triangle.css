@@ -70,6 +70,7 @@
 	border-top: 1px solid black;
 	height: auto;
 	padding: 0px 10px 0px 10px;
+	font-size: small;
 }
 
 .triangle_data_cell {
