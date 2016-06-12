@@ -11,9 +11,12 @@
 {% endif %}
 
 {% if page.js %}
+	YES
   {% for js in page.js %}
 	<script src="{{ js | prepend: site.baseurl | replace: '//', '/' }}"></script>
   {% endfor %}
+  {% else %}
+	NOP
 {% endif %}
 
 {% if layout.common-js %}
