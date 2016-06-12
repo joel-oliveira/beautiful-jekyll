@@ -2,6 +2,8 @@
 layout: page
 title: Testing Triangles
 subtitle: A classic testing exercise
+css:
+  - "/css/triangle.css"
 js:
   #- "/js/raphael-2.2.0.min.js" # "https://raw.githubusercontent.com/DmitryBaranovskiy/raphael/master/raphael.min.js"
   - "/js/raphael.js"
@@ -19,7 +21,6 @@ Inspired on the work done by [Elisabeth Hendrickson](http://testobsessed.com/200
 			<input id="triangle_category" name="triangle[category]" type="hidden" />
 			<input id="triangle_coordinates" name="triangle[coordinates]" type="hidden" />
 			<div id="triangle_frame">
-				<div id="canvas">&nbsp;</div>
 				<div id="side2_container" class="side">
 					<font size=1>Side 2</font><br />
 					<input id="triangle_side2" name="triangle[side2]" onchange="drawTriangle();" size="5" type="text" />
@@ -33,6 +34,7 @@ Inspired on the work done by [Elisabeth Hendrickson](http://testobsessed.com/200
 					<input id="triangle_side1" name="triangle[side1]" onchange="drawTriangle();" size="5" type="text" />
 				</div>
 				<div id="triangle_type"></div>
+				<div id="canvas">&nbsp;</div>
 			</div>
 		</form>
 	</div>
