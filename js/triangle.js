@@ -97,7 +97,7 @@ function drawTriangle() {
 	var side3val = document.getElementById('triangle_side3').value;
 	triangle.setSides(side1val, side2val, side3val);
 	triangle.draw();
-	document.getElementById('triangles_list').innerHTML += '<div class="triangle_row clearfloat"><div class="triangle_data_cell narrow">' + triangle.x1 + '</div><div class="triangle_data_cell narrow">' + triangle.x2 + '</div><div class="triangle_data_cell narrow">' + triangle.x3 + '</div><div class="triangle_data_cell wide">-</div><div class="triangle_data_cell wide">(10,190) (51,70) (200,190)</div></div>';
+	document.getElementById('triangles_list').innerHTML = '<div class="triangle_row clearfloat"><div class="triangle_data_cell narrow">' + triangle.x1 + '</div><div class="triangle_data_cell narrow">' + triangle.x2 + '</div><div class="triangle_data_cell narrow">' + triangle.x3 + '</div><div class="triangle_data_cell wide">-</div><div class="triangle_data_cell wide">(10,190) (51,70) (200,190)</div></div>' + document.getElementById('triangles_list').innerHTML;
 }
 
 function initializeTriangle() {
