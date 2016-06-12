@@ -40,18 +40,18 @@
 }
 
 #side1_container {
-	bottom: 5px;
-	left: 120px;
+	bottom: 10px;
+	left: 130px;
 }
 
 #side2_container {
 	left: 10px; 
-	top: 20px;
+	top: 10px;
 }
 
 #side3_container {
 	right: 10px; 
-	top: 20px;
+	top: 10px;
 }
 
 #triangle_type {
