@@ -39,22 +39,22 @@
 	z-index: 99999;
 }
 
-#side1_container {
+.side1 {
 	bottom: 10px;
 	left: 130px;
 }
 
-#side2_container {
+.side2 {
 	left: 10px; 
 	top: 10px;
 }
 
-#side3_container {
+.side3 {
 	right: 10px; 
 	top: 10px;
 }
 
-#triangle_type {
+#type {
 	font-weight: bold; 
 	font-size: 4em; 
 	position: absolute; 
@@ -86,4 +86,20 @@
 
 .wide {
 	width: 85px;
+}
+
+select {
+	margin-top: 3px;
+}
+
+.submit {
+	width: 200px;
+	height: 30px;
+}
+
+.hide {
+	position: absolute;
+	left: -9999px;
+	width: 1px;
+	height: 1px;
 }
