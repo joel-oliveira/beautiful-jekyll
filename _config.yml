@@ -25,10 +25,10 @@ description: There is more than one way to do it, but do it right the first time
 navbar-links:
   About Me: "aboutme"
   Training:
-    - TeSTO: "testo"
+    - TeSTO: "training/testo"
   Resources:
     - Triangles: "triangles"
-    - Downloads: "downloads"
+    #- Downloads: "downloads"
     - Broken: "broken"
 
 # Image to show in the navigation bar - image must be a square (width = height)

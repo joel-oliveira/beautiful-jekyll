@@ -74,6 +74,11 @@ Triangle.prototype.draw = function() {
 	}
 }
 
+Triangle.prototype.clear = function() {
+	this.canvas.clear();
+	//this = new Triangle();
+}
+
 Triangle.prototype.center = function() {
 	//get the total width of the triangle
 	var xVals = [this.x1, this.x2, this.x3];
@@ -116,7 +121,12 @@ function initializeTriangle() {
 }
 
 function resetSession() {
+	$("#side1").val("");
+	$("#side2").val("");
+	$("#side3").val("");
 	$("#list").html("");
+	$("#type").html("");
+	triangle.clear();
 	$.jStorage.flush();
 	return ($("#web").val() == 1);
 }
@@ -133,8 +143,9 @@ function setBehavior(web) {
 			$("input[type='submit']").removeClass("hide");
 			$("#form").on("submit", function(event) {
 				event.preventDefault();
-				$.get($("#form").attr("action"), {web: $('#web').val(), side1: $('#side1').val(), side2: $('#side2').val(), side3: $('#side3').val()} );
-				drawTriangle();
+				$.get($("#form").attr("action"), {web: $('#web').val(), side1: $('#side1').val(), side2: $('#side2').val(), side3: $('#side3').val()}, function(data) {
+					drawTriangle();
+				});
 			});
 			$("input[id^='side']").off("change");
 			break;
